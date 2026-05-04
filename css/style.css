@@ -194,3 +194,20 @@ footer {
     margin-bottom: 40px;
     border: 1px solid #ddd;
 }
+.product, .card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product:hover, .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+button {
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #c89f8c;
+}
