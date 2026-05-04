@@ -140,3 +140,57 @@ footer {
     flex-direction: column;
   }
 }
+.page-banner {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.shop-banner {
+    background: url('https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1600&q=80') center/cover;
+}
+
+.about-banner {
+    background: url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1600&q=80') center/cover;
+}
+
+.contact-banner {
+   background: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=80') center/cover;
+}
+
+.shop-section, .about-content, .contact-section {
+    padding: 80px 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    line-height: 1.9;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+#search {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+}
