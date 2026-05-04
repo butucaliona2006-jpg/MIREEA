@@ -1,50 +1,88 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIREA | Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIREA | Official Fashion Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
 </head>
 <body>
+
 <header>
-    <div class="logo">MIREA</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+  <div class="logo">MIREA</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="cart">🛒 <span id="cart-count">0</span></div>
 </header>
 
 <section class="hero">
-    <h1>MIREA – Eleganță în fiecare stil</h1>
-    <p>Descoperă colecția minimalistă premium</p>
-    <a href="shop.html" class="btn">Shop Now</a>
+    <div class="hero-overlay">
+    <h1>Define Your Elegance</h1>
+    <p>Luxury minimal fashion for modern lifestyles</p>
+    <a href="shop.html" class="btn">Discover Collection</a>
+  </div>
+</section>
+
+<section class="categories">
+  <h2>Featured Categories</h2>
+  <div class="category-grid">
+    <div class="category-card">
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80">
+      <h3>Women</h3>
+    </div>
+    <div class="category-card">
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80">
+      <h3>Men</h3>
+    </div>
+    <div class="category-card">
+      <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80">
+      <h3>Accessories</h3>
+    </div>
+  </div>
 </section>
 
 <section class="featured-products">
-    <h2>Produse Populare</h2>
-    <div class="product-grid">
-        <div class="product-card">
-            <img src="images/product1.jpg" alt="Produs">
-            <h3>Classic Coat</h3>
-            <p>899 MDL</p>
-            <button onclick="addToCart('Classic Coat',899)">Adaugă în coș</button>
-        </div>
-        <div class="product-card">
-            <img src="images/product2.jpg" alt="Produs">
-            <h3>Minimal Dress</h3>
-            <p>699 MDL</p>
-            <button onclick="addToCart('Minimal Dress',699)">Adaugă în coș</button>
-        </div>
+  <h2>Best Sellers</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80">
+      <h3>Elegant Coat</h3>
+      <p>1299 MDL</p>
+      <button onclick="addToCart('Elegant Coat',1299)">Add to Cart</button>
     </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80">
+      <h3>Minimal Dress</h3>
+      <p>999 MDL</p>
+      <button onclick="addToCart('Minimal Dress',999)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80">
+      <h3>Urban Jacket</h3>
+      <p>1199 MDL</p>
+      <button onclick="addToCart('Urban Jacket',1199)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+    <h2>Join MIREA Community</h2>
+  <form id="newsletter-form">
+    <input type="email" placeholder="Your email">
+    <button type="submit">Subscribe</button>
+  </form>
 </section>
 
 <footer>
-    <p>© 2026 MIREA Fashion Store</p>
+  <p>© 2026 MIREA Official Store | Premium Fashion Brand</p>
 </footer>
+
 </body>
 </html>
