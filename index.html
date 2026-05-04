@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIREA | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">MIREA</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+</header>
+
+<section class="hero">
+    <h1>MIREA – Eleganță în fiecare stil</h1>
+    <p>Descoperă colecția minimalistă premium</p>
+    <a href="shop.html" class="btn">Shop Now</a>
+</section>
+
+<section class="featured-products">
+    <h2>Produse Populare</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="images/product1.jpg" alt="Produs">
+            <h3>Classic Coat</h3>
+            <p>899 MDL</p>
+            <button onclick="addToCart('Classic Coat',899)">Adaugă în coș</button>
+        </div>
+        <div class="product-card">
+            <img src="images/product2.jpg" alt="Produs">
+            <h3>Minimal Dress</h3>
+            <p>699 MDL</p>
+            <button onclick="addToCart('Minimal Dress',699)">Adaugă în coș</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 MIREA Fashion Store</p>
+</footer>
+</body>
+</html>
