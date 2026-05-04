@@ -16,25 +16,43 @@
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </nav>
+    <div class="cart">🛒 <span id="cart-count">0</span></div>
 </header>
 
+<section class="page-banner shop-banner">
+    <h1>Our Collection</h1>
+    <p>Premium minimalist fashion</p>
+</section>
+
 <section class="shop-section">
-    <h1>Catalog Produse</h1>
-    <input type="text" id="search" placeholder="Caută produse..." onkeyup="searchProducts()">
-    <div id="products" class="product-grid">
+    <input type="text" id="search" placeholder="Search products..." onkeyup="searchProducts()">
+
+    <div class="product-grid" id="products">
         <div class="product-card product-item">
-           <h3>Classic Coat</h3>
-            <p>899 MDL</p>
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80">
+            <h3>Elegant Coat</h3>
+            <p>1299 MDL</p>
+            <button onclick="addToCart('Elegant Coat',1299)">Add to Cart</button>
         </div>
+
         <div class="product-card product-item">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80">
             <h3>Minimal Dress</h3>
-            <p>699 MDL</p>
+            <p>999 MDL</p>
+            <button onclick="addToCart('Minimal Dress',999)">Add to Cart</button>
         </div>
+
         <div class="product-card product-item">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80">
             <h3>Urban Jacket</h3>
-            <p>799 MDL</p>
+            <p>1199 MDL</p>
+            <button onclick="addToCart('Urban Jacket',1199)">Add to Cart</button>
         </div>
     </div>
 </section>
+
+<footer>
+    <p>© 2026 MIREA Official Store</p>
+</footer>
 </body>
 </html>
