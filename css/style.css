@@ -211,3 +211,19 @@ button:hover {
   transform: scale(1.05);
   background: #c89f8c;
 }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(247,243,239,0.8);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+}
+section {
+  padding: 100px 60px;
+}
+
+h1, h2 {
+  letter-spacing: 2px;
+  font-weight: 300;
+}
